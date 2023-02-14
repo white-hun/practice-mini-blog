@@ -8,6 +8,12 @@ const StyledButton = styled.button`
   border-radius: 8px;
   cursor: pointer;
   background-color: #00c6f7;
+  :hover {
+    transition: 0.4s;
+    scale: 1.07;
+    will-change: transform;
+  }
+  transition: 0.4s;
 `;
 
 // Button 컴포넌트

@@ -16,6 +16,7 @@ const Wrapper = styled.div`
     background: #00c6f7;
     transition: 0.3s;
     opacity: 1;
+    scale: 1.05;
   }
   transition: 0.4s;
 `;
