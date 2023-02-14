@@ -5,32 +5,30 @@ const Wrapper = styled.div`
   width: calc(100% - 32px);
   padding: 16px;
   display: flex;
-  align-items: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
   border: 1px solid grey;
   border-radius: 8px;
   cursor: pointer;
   background: white;
   :hover {
-    background: #00c6f7;
-    transition: 0.3s;
+    background: lightgrey;
   }
-  transition: 0.4s;
 `;
 
-const TitleText = styled.p`
-  font-size: 20px;
-  font-weight: 500;
+const ContentText = styled.p`
+  font-size: 14px;
 `;
 
-function PostListItem(props) {
-  const { post, onClick } = props;
+function CommentListItem(props) {
+  const { comment } = props;
 
   return (
-    <Wrapper onClick={onClick}>
-      <TitleText>{post.title}</TitleText>
+    <Wrapper>
+      <ContentText>{comment.content}</ContentText>
     </Wrapper>
   );
 }
 
-export default PostListItem;
+export default CommentListItem;
