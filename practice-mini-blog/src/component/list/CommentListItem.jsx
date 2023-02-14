@@ -27,13 +27,15 @@ const ContentText = styled.p`
 `;
 
 // CommentListItem 컴포넌트
-// comment(comments의 중괄호 한묶음)
+// comment(comments의 아이템)
 // 1개의 prop를 가진다
 function CommentListItem(props) {
   const { comment } = props;
 
-  // Wrapper이라는 <div> tag 안에 들어간 ContentText <p> tag
-  // comment의 content
+  // <div> tag Wrapper
+  // IN //
+  // ContentText <p> tag
+  // comment의 content 출력
   return (
     <Wrapper>
       <ContentText>{comment.content}</ContentText>

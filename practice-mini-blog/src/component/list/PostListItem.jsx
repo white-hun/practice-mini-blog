@@ -23,12 +23,19 @@ const Wrapper = styled.div`
 
 const TitleText = styled.p`
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 600;
 `;
 
+// PostListItem 컴포넌트
+// post(posts의 아이템), onClick(버튼 클릭 이벤트)
+// 2개의 props를 가진다
 function PostListItem(props) {
   const { post, onClick } = props;
 
+  // 클릭 이벤트를 가진 <div> tag Wrapper
+  // IN //
+  // <p> tag TitleText
+  // post의 title 출력
   return (
     <Wrapper onClick={onClick}>
       <TitleText>{post.title}</TitleText>

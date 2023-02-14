@@ -5,9 +5,7 @@ import "../App.css";
 function Icon(props) {
   return (
     <div className="App">
-      <div className="logo-box">
-        <img src={logo} className="App-logo" alt="logo" />
-      </div>
+      <img src={logo} className="App-logo" alt="logo" />
     </div>
   );
 }
