@@ -7,7 +7,7 @@ import Button from "../ui/Button";
 import data from "../../data.json";
 
 const Wrapper = styled.div`
-  padding: 16px;
+  padding: 8px 16px;
   width: calc(100% - 32px);
   display: flex;
   flex-direction: column;
