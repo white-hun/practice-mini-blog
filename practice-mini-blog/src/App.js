@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import styled from "styled-components";
+import Icon from "./component/Icon";
+
 // Pages
 import MainPage from "./component/page/MainPage";
 import PostWritePage from "./component/page/PostWritePage";
@@ -16,6 +18,7 @@ function App(props) {
   return (
     <BrowserRouter>
       <MainTitleText>백승훈 미니 블로그</MainTitleText>
+      <Icon />
       <Routes>
         <Route index element={<MainPage />} />
         <Route path="post-write" element={<PostWritePage />} />

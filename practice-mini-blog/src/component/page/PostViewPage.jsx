@@ -30,6 +30,8 @@ const PostContainer = styled.div`
   padding: 16px;
   border: 1px solid grey;
   border-radius: 8px;
+  background: white;
+  opacity: 0.9;
 `;
 
 const TitleText = styled.p`

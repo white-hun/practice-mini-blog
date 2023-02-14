@@ -12,9 +12,13 @@ const Wrapper = styled.div`
   border-radius: 8px;
   cursor: pointer;
   background: white;
+  opacity: 0.9;
   :hover {
-    background: lightgrey;
+    background: #00c6f7;
+    transition: 0.3s;
+    opacity: 1;
   }
+  transition: 0.4s;
 `;
 
 const ContentText = styled.p`
