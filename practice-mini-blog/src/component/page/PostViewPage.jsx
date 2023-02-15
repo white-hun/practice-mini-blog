@@ -51,7 +51,7 @@ const CommentLabel = styled.p`
 `;
 
 // 컴포넌트 PostViewPage
-function PostViewPage(props) {
+export default function PostViewPage(props) {
   // 변수 navigate - 페이지 이동 하는 함수 useNavigate()
   // 파라미터를 가져와 사용하는 함수 useParams()
   const navigate = useNavigate();
@@ -115,4 +115,4 @@ function PostViewPage(props) {
   );
 }
 
-export default PostViewPage;
+// export default PostViewPage;
