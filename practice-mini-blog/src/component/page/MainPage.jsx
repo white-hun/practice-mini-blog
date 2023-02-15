@@ -25,8 +25,17 @@ const Container = styled.div`
   }
 `;
 
+// 컴포넌트 MainPage
 function MainPage(props) {
+  // 변수 navigate - 페이지 이동 하는 함수 useNavigate()
   const navigate = useNavigate();
+
+  // <div> tag Wrapper
+  // IN //
+  // <container>
+  // IN //
+  // 컴포넌트 Button - title과 클릭이벤트를 가진 버튼(클릭 시 navigate로 지정한 경로(post-write 페이지)로 이동)
+  // 컴포넌트 postList - posts, 아이템을 클릭하면 navigate로 지정한 경로(클릭한 아이템의 id를 가진 post)로 이동
 
   return (
     <Wrapper>

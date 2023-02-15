@@ -50,16 +50,35 @@ const CommentLabel = styled.p`
   font-weight: 500;
 `;
 
+// 컴포넌트 PostViewPage
 function PostViewPage(props) {
+  // 변수 navigate - 페이지 이동 하는 함수 useNavigate()
+  // 파라미터를 가져와 사용하는 함수 useParams()
   const navigate = useNavigate();
   const { postId } = useParams();
 
+  // 변수 post - data에서 item을 찾아 item.id == postId로 리턴(useParams에 사용)
   const post = data.find((item) => {
     return item.id == postId;
   });
 
+  // 변수 comment, comment가 업데이트 될 때 저장 하는 함수 setComment
+  // usestate로 사용
   const [comment, setComment] = useState("");
 
+  // <div> tag Wrapper
+  // IN //
+  // <div> tag Container
+  // IN //
+  // 컴포넌트 Button - title과 클릭이벤트를 가진 버튼(클릭 시 navigate로 초기 경로(MainPage)로 이동)
+  // <div> tag PostContainer
+  // - <p> tag TitleText - post 의 title 출력
+  // - <p> tag ContentText - post 의 content 출력
+  // <p> tag CommentLabel - '댓글' 출력
+  // 컴포넌트 CommentList - post의 comment를 attribute로 가진 mapping된 CommentListItem 출력
+  // 컴포넌트 TextInput - 높이값, state의 comment, onChange를 attribute로 가진다
+  // TextInput의 값을 onChange 이벤트 발생 시 setComment로 업데이트
+  // 컴포넌트 Button - title과 클릭이벤트를 가진 버튼(클릭 시 navigate로 지정한 초기 경로(MainPage)로 이동)
   return (
     <Wrapper>
       <Container>
